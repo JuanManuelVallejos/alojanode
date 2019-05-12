@@ -1,0 +1,13 @@
+{
+	"development":{
+		"database": "db_alojapp",
+		"host": "localhost",
+	},
+	"test":{
+		"database": "db_alojapp",
+		"host": "localhost",	
+	},
+	"production":{
+		"use_env_variable": "MONGODB_URI"
+	}
+}
