@@ -1,0 +1,36 @@
+{
+  "name": "ubicacion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "provincia": {
+      "type": "string",
+      "required": true
+    },
+    "localidad": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "alojamiento_ubicacion": {
+      "type": "hasOne",
+      "model": "alojamiento",
+      "foreignKey": "ubicacionId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

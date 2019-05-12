@@ -1,0 +1,41 @@
+{
+  "name": "alojamiento",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "default": "descripcion"
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "tipoAlojamiento": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "number"
+    },
+    "ubicacionId": {
+      "type": "number"
+    },
+    "eliminado": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
