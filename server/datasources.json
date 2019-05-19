@@ -4,13 +4,11 @@
     "connector": "memory"
   },
   "db_alojapp": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
+    "host": "mongodb+srv://root:root@cluster0-v7op3.mongodb.net/test?retryWrites=true",
     "database": "db_alojapp",
-    "password": "",
+    "password": "root",
     "name": "db_alojapp",
-    "user": "",
+    "user": "root",
     "connector": "mongodb"
   }
 }
